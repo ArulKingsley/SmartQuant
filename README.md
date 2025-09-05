@@ -17,6 +17,12 @@ A research and deployment project for a reinforcement learning-based trading bot
 - `virtualization/` – Docker/env setup
 
 ## Phase Goals
-- Phase 1: Setup + Data Ingestion ✅
-- Phase 2: Trading Environment + Reward Engineering 🔜
-- Phase 3: Train Hybrid Agent (RL + LSTM)
+
+```mermaid
+flowchart TD
+    A[Phase 1: Data Preprocessing] --> B[Phase 2: LSTM Forecasting]
+    B --> C[Phase 3: RL Trading Environment]
+    C --> D[Phase 4: Meta-RL + Multi-Agent System]
+    D --> E[Phase 5: Backtesting & Visualization]
+    E --> F[Phase 6: Deployment - Paper Trading]
+    F --> G[Phase 7: Extensions - News, Portfolio, Explainability]
